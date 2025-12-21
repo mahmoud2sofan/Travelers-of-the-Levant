@@ -81,11 +81,7 @@
     background: rgba(255, 255, 255, 0.1);
 }
 
-.footer-social svg {
-    width: 20px;
-    height: 20px;
-    fill: currentColor;
-}
+
 
 .footer-social a:hover {
     color: #002D04;

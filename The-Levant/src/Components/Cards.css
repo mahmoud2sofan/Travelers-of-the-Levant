@@ -1,0 +1,90 @@
+.countries-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.country-card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: cardFade 0.6s ease forwards;
+}
+
+.country-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+.country-image {
+  height: 200px;
+  overflow: hidden;
+}
+
+.country-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.country-card:hover img {
+  transform: scale(1.08);
+}
+
+.country-content {
+  padding: 20px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.country-name {
+  font-size: 1.4rem;
+  margin-bottom: 4px;
+}
+
+.country-description {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #ddd;
+}
+
+.explore-button {
+  padding: 10px 0;
+  border: none;
+  border-radius: 8px;
+  background-color: rgba(0, 140, 0, 0.9);
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+.explore-button:hover {
+  background-color: rgba(0, 180, 0, 0.95);
+  transform: translateY(-2px);
+}
+
+@keyframes cardFade {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 480px) {
+  .country-image {
+    height: 170px;
+  }
+}

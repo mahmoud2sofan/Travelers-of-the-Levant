@@ -87,7 +87,6 @@
 .footer-social a:hover {
     color: #FFFFFF;
     background: #002D04;
-    /* Matches footer bg, or could be a lighter shade/accent */
     background: rgba(255, 255, 255, 0.2);
     transform: translateY(-3px);
 }

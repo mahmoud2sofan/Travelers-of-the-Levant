@@ -1,7 +1,7 @@
 import React from 'react';
-import LoginForm from '../../Components/LoginForm.jsx';
-import Welcome from '../../Components/Welcome.jsx';
-import '../../Login.css';
+import LoginForm from '../../Components/Login/LoginForm.jsx';
+import Welcome from '../../Components/Welcome/Welcome.jsx';
+import '../02-Login/Login.css';
 
 function Login() {
   return (

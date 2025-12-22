@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./Nav.css";
 
 
@@ -6,14 +6,14 @@ function Nav() {
     return (
         <nav className="nav">
             <div className="Container-nav">
-                <a href="/" className="logo-container">
+                <Link to="/" className="logo-container">
                     <img src="/Logo.png" alt="Logo" className="logo" />
-                </a>
+                </Link>
                 <ul>
-                    <li>Home</li>
-                    <li>Countries</li>
-                    <li>Hire A Guide</li>
-                    <li>About Us</li>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/countries">Countries</Link></li>
+                    <li><Link to="/hire-a-guide">Hire A Guide</Link></li>
+                    <li><Link to="/about">About Us</Link></li>
                 </ul>
             </div>
         </nav>

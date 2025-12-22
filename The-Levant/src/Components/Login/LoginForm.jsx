@@ -21,6 +21,7 @@ function LoginForm() {
       const users = await res.json();
 
       if (users.find(us => us.username === username && us.password === password)) {
+        localStorage.setItem('token', '123');
         moveTo('/home');
       } else {
         setError('Incorrect username or password');

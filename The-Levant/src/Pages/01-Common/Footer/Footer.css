@@ -72,6 +72,8 @@
 .footer-social a {
     color: #cccccc;
     transition: all 0.3s ease;
+    text-decoration: none;
+    font-size: 24px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -81,14 +83,13 @@
     background: rgba(255, 255, 255, 0.1);
 }
 
-.footer-social svg {
-    width: 20px;
-    height: 20px;
-    fill: currentColor;
-}
 
 .footer-social a:hover {
     color: #FFFFFF;
+    background: #002D04;
+    /* Matches footer bg, or could be a lighter shade/accent */
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
 }
 
 .footer-bottom {

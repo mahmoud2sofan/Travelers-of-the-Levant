@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.app-container {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  background-image: url('../src/assets/5.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes cardEnter {
+  0% {
+    opacity: 0;
+    transform: translateY(40px) scale(0.96);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.login-container {
+  background-color: rgba(255, 255, 255, 0.28);
+  backdrop-filter: blur(14px);
+  padding: 45px 35px;
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+  width: 420px;
+  min-height: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: cardEnter 0.9s ease-out forwards;
+}
+
+.welcome-msg {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 30px;
+  text-align: center;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}
+
+.login-form {
+  width: 100%;
+}
+
+.login-form .MuiTextField-root {
+  margin-bottom: 18px;
+  background-color: rgba(255,255,255,0.25);
+  border-radius: 6px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.login-form .MuiTextField-root:hover {
+  transform: scale(1.02);
+}
+
+.login-form .MuiInputBase-input {
+  color: #fff;
+}
+
+.login-form .MuiInputLabel-root {
+  color: #eee;
+}
+
+.login-form .login-button {
+  margin-top: 15px;
+  width: 100%;
+  font-weight: bold;
+}
+
+.login-form .MuiButton-root:hover {
+  background-color: rgba(0,140,0,0.95);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .login-container {
+    width: 90%;
+  }
+}

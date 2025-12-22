@@ -72,6 +72,8 @@
 .footer-social a {
     color: #cccccc;
     transition: all 0.3s ease;
+    text-decoration: none;
+    font-size: 24px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -82,10 +84,10 @@
 }
 
 
-
 .footer-social a:hover {
-    color: #002D04;
-    background: #FFFFFF;
+    color: #FFFFFF;
+    background: #002D04;
+    background: rgba(255, 255, 255, 0.2);
     transform: translateY(-3px);
 }
 

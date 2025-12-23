@@ -11,33 +11,35 @@ const CardsGrid = ({ searchQuery = '' }) => {
     let url = null;
 
     if (countryName === 'Palestine') {
-      url = 'https://mocki.io/v1/36738a55-8abf-4014-aa44-468adfc33797';
+      url = 'https://mocki.io/v1/36738a55-8abf-4014-aa44-468adfc33797'; // جاهز
       if (purpose === 'Nature') {
-        url = 'https://mocki.io/v1/8e612bdd-4007-4e96-97a1-812a87f3ae3c';
+        url = 'https://mocki.io/v1/2712ff1a-33d2-44a1-ab77-fd4589b9cc0c'; // جاهز
       } else if (purpose === 'Religious') {
-        url = 'https://mocki.io/v1/0a208e8a-d4c6-4ac8-8c35-0a729fba41c6';
+        url = 'https://mocki.io/v1/205dcd08-2286-4d01-a618-2e2251da4449'; // jahiz
       }
     } else if (countryName === 'Syria') {
       if (purpose === 'Historical') {
-        url = 'https://mocki.io/v1/e5c3b79c-6481-4ef6-a647-c88920880e2c';
+        url = 'https://mocki.io/v1/536bcb19-d4cb-4062-a962-d8730ab84dea'; // jaheeeez
       } else if (purpose === 'Religious') {
-        url = 'https://mocki.io/v1/f700ecfe-b450-4a48-b858-b32660a20c41';
+        url = 'https://mocki.io/v1/6bc1816c-f53d-40d1-aa0a-7a75705ee4f7'; // jaheeez
       } else if (purpose === 'Nature') {
-        url = 'https://mocki.io/v1/4769f5f1-4650-4920-86ab-ad5b76a262d3';
+        url = 'https://mocki.io/v1/4540a750-594c-4c8e-bd5e-38f7af7a1778'; //doneee
       }
     } else if (countryName === 'Jordan') {
       if (purpose === 'Nature') {
-        url = 'https://mocki.io/v1/e5eb2e02-9bbb-4350-9317-5c66c528949a';
+        url = 'https://mocki.io/v1/1dc4bffe-38b4-4c62-825a-44c70a36d352';
       } else if (purpose == 'Historical') {
-        url = 'https://mocki.io/v1/d836a547-19cf-41e8-90f1-098cc644f72e';
+        url = 'https://mocki.io/v1/b05ac1a5-fc66-47d1-bf90-3fdf287485fa';
+      } else if (purpose == 'Religious'){
+        url = 'https://mocki.io/v1/68d15056-379d-45ac-aac5-5ae3146c97eb;
       }
     } else if (countryName === 'Lebanon') {
       if (purpose === 'Nature') {
-        url = 'https://mocki.io/v1/b98bb451-3a08-41b8-bb81-c73369d06455';
+        url = 'https://mocki.io/v1/cddbfb24-7255-44dc-bb0a-d5609e711498';
       } else if (purpose === 'Religious') {
-        url = 'https://mocki.io/v1/7330bf15-0555-45c1-9de8-2c2c45ba6f1f';
+        url = 'https://mocki.io/v1/87104af2-2de9-4ee6-95a7-2fe020b50f05'; 
       } else if (purpose === 'Historical') {
-        url = 'https://mocki.io/v1/b1befa92-58ce-47aa-8be2-5d434b9be90f';
+        url = 'https://mocki.io/v1/d03812ee-ce72-4fd5-9dcf-245ed3a024ae';
       }
     }
 

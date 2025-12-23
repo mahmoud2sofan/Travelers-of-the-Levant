@@ -21,7 +21,6 @@ const StorySection = () => {
     const countryName = ctx.countryName || 'Palestine';
     const [showVideo, setShowVideo] = useState(false);
 
-    // Normalize country name logic similar to App.jsx to ensure matching
     const _cn = String(countryName).trim().toLowerCase();
     let normalizedCountry = 'Palestine'; // Default
 
@@ -78,3 +77,4 @@ const StorySection = () => {
 };
 
 export default StorySection;
+

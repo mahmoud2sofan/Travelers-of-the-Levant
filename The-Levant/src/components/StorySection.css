@@ -13,7 +13,6 @@
     font-size: 2rem;
     color: #333;
     margin-bottom: 24px;
-    /* font-family removed to inherit global font (Inter) */
 }
 
 .watch-btn {
@@ -102,4 +101,5 @@
 
 .close-modal-btn:hover {
     color: #ff4d4d;
+
 }

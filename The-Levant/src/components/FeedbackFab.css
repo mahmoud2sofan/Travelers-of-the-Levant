@@ -4,7 +4,6 @@
     right: 20px;
     z-index: 1000;
 }
-
 .feedback-fab {
     width: 60px;
     height: 60px;
@@ -89,4 +88,5 @@
         opacity: 1;
         transform: translateY(0);
     }
+
 }

@@ -7,7 +7,7 @@
   color: white;
   text-align: center;
 
-  background-image: linear-gradient(rgba(0, 45, 4, 0.5), rgba(0, 0, 0, 0.5)), url('../../assests/Hero.jpg');
+  background-image: linear-gradient(rgba(0, 45, 4, 0.5), rgba(0, 0, 0, 0.5)), url('../../../assets/Hero.jpg');
   background-size: cover;
   background-position: center;
 }

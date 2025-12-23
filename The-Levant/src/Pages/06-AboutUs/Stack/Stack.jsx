@@ -1,11 +1,13 @@
+import React from 'react';
 import "./Stack.css";
+import StackImg from "../../../assets/Stack.png";
 
 function Stack() {
     return (
         <div className="stack-container">
             <div className="stack-row">
                 <div className="stack-image">
-                    <img src="../assets/stack.png" alt="Technical Stack" />
+                    <img src={StackImg} alt="Technical Stack" />
                 </div>
                 <div className="stack-content">
                     <h2>Technical Stack</h2>

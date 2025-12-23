@@ -7,7 +7,7 @@ import GuidePreferences from './GuidePreferences/GuidePreferences';
 
 import SpecialRequests from './SpecialRequests/SpecialRequests';
 
-import Nav from '../About-Us-Page/Nav/Nav';
+import Nav from '../../Components/Nav/Nav';
 
 const HireAGuide = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
@@ -51,6 +51,7 @@ const HireAGuide = () => {
 
     return (
         <div className="container">
+            <Nav />
             <h2 className="title">Hire A Guide</h2>
             <p style={{ textAlign: 'center', marginBottom: '30px', color: '#666' }}>
                 Fill out the form below to find the perfect guide for your trip.

@@ -1,11 +1,13 @@
+import React from 'react';
 import "./Features.css";
+import FeaturesImg from "../../../assets/Features.png";
 
 function Features() {
     return (
         <div className="features-container">
             <div className="features-row">
                 <div className="features-image">
-                    <img src="../../assets/Features.png" alt="Core Features" />
+                    <img src={FeaturesImg} alt="Core Features" />
                 </div>
                 <div className="features-content">
                     <h2>Core Features (What We Offer)</h2>

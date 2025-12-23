@@ -1,14 +1,14 @@
 import React from 'react';
 import LoginForm from '../../Components/Login/LoginForm.jsx';
 import Welcome from '../../Components/Welcome/Welcome.jsx';
-import '../02-Login/Login.css';
+import './Login.css';
 
 function Login() {
   return (
     <div className="app-container">
       <div className="main-content">
         <div className="login-container">
-          <Welcome />  
+          <Welcome />
           <LoginForm />
         </div>
       </div>

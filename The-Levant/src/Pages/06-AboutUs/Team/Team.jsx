@@ -1,4 +1,6 @@
+import React from 'react';
 import "./Team.css";
+import TeamImg from "../../../assets/Team.png";
 
 const teamMembers = [
     {
@@ -44,7 +46,7 @@ function Team() {
                     </ul>
                 </div>
                 <div className="team-image">
-                    <img src="../../assets/Team.png" alt="Meet the Developers" />
+                    <img src={TeamImg} alt="Meet the Developers" />
                 </div>
             </div>
         </div>

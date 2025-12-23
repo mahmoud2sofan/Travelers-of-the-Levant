@@ -1,4 +1,6 @@
+import React from 'react';
 import "./Mission.css";
+import MissionImg from "../../../assets/Mission.png";
 
 function Mission() {
     return (
@@ -13,7 +15,7 @@ function Mission() {
                     </p>
                 </div>
                 <div className="mission-image">
-                    <img src="../../assets/mission.png" alt="Project Mission" />
+                    <img src={MissionImg} alt="Project Mission" />
                 </div>
             </div>
         </div>

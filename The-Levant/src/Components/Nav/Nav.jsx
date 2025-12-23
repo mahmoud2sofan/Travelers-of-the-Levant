@@ -1,20 +1,21 @@
+import { Link } from 'react-router-dom';
 import "./Nav.css";
 
 
-function Nav({ setCurrentPage }) {
+function Nav() {
 
     return (
         <nav className="nav">
             <div className="Container-nav">
-                <a onClick={() => setCurrentPage('about')} className="logo-container">
-                    <img src="/S.png" alt="Logo" className="logo" />
-                </a>
+                <Link to="/home" className="logo-container">
+                    <img src="/Logo.png" alt="Logo" className="logo" />
+                </Link>
 
                 <ul className="nav-menu">
-                    <li onClick={() => setCurrentPage('about')}>Home</li>
-                    <li onClick={() => setCurrentPage('about')}>Countries</li>
-                    <li onClick={() => setCurrentPage('hire')}>Hire A Guide</li>
-                    <li onClick={() => setCurrentPage('about')}>About Us</li>
+                    <li><Link to="/home">Home</Link></li>
+                    <li><Link to="/home">Countries</Link></li>
+                    <li><Link to="/hire-guide">Hire A Guide</Link></li>
+                    <li><Link to="/about-us">About Us</Link></li>
                 </ul>
             </div>
         </nav>

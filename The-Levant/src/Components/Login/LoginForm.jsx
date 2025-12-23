@@ -23,7 +23,7 @@ function LoginForm() {
       if (users.find(us => us.username === username && us.password === password)) {
 
         localStorage.setItem('token', '123');
-        moveTo('/Home');
+        moveTo('/home');
       } else {
         setError('Incorrect username or password');
       }

@@ -1,0 +1,12 @@
+body {
+	margin: 0;
+	padding-top: 60px;
+	background: linear-gradient(180deg, #f6fbf7 0%, #ffffff 100%);
+	color: #162413;
+	font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+	-webkit-font-smoothing: antialiased;
+}
+
+html {
+	scroll-behavior: smooth;
+}

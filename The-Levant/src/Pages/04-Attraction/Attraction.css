@@ -51,6 +51,7 @@ body {
     font-weight: 300;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
+
 .navbar {
     position: fixed;
     top: 0;
@@ -59,7 +60,6 @@ body {
     padding: 1.5rem 3rem;
     display: flex;
     justify-content: flex-start;
-    /* Align lenks to left */
     align-items: center;
     gap: 4rem;
     z-index: 10;
@@ -105,6 +105,7 @@ body {
 .nav-links a:hover::after {
     width: 100%;
 }
+
 .featured-section {
     padding: 4rem 2rem;
     display: flex;
@@ -153,4 +154,3 @@ body {
     line-height: 1.6;
 
 }
-

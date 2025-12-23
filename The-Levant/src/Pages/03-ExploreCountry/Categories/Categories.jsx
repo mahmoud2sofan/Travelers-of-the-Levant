@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { UserContext } from '../../../UserContext';
 import './Categories.css';
+import tourImage from '../../../assets/tour.jpeg';
 
 
 const Categories = ({ countryName }) => {
@@ -9,7 +10,7 @@ const Categories = ({ countryName }) => {
     const navigate = useNavigate();
     const { setPurpose } = useContext(UserContext);
 
-    // Glob import for assets
+
     const images = import.meta.glob('../../../assets/ExploreCountry/**/*.jpeg', { eager: true });
 
     const getImagePath = (category) => {
@@ -19,7 +20,7 @@ const Categories = ({ countryName }) => {
         );
         return key ? images[key].default : '';
     };
-    // Data matched from original index.html
+
     const sections = [
         {
             id: 'natural',
@@ -45,7 +46,7 @@ const Categories = ({ countryName }) => {
         {
             id: 'guide',
             name: 'Tour Guide',
-            image: getImagePath('guide'),
+            image: tourImage,
             description: "Get comprehensive information about the best hotels, restaurants, tourist attractions, and available services to ensure an enjoyable and safe travel experience.",
             link: '/guide.html'
         }

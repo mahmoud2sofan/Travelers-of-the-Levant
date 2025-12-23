@@ -17,16 +17,15 @@
 
 .watch-btn {
     background-color: #28a745;
-    /* Site green */
+
     color: white;
     border: none;
     padding: 14px 32px;
     font-size: 1.1rem;
     font-weight: bold;
-    border-radiuؤي
-    /* Rounded pؤي 
-    cursor: poinؤي 
-    transition: ؤي  0.2s ease;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
     display: inline-flex;
     align-items: center;
     gap: 10px;
@@ -36,17 +35,17 @@
 
 .watch-btn:hover {
     background-color: #145A2A;
-    /* Darker green on hover */
+
     transform: scale(1.05);
 }
 
 .watch-btn::before {
     content: '►';
-    /* Play icon */
+
     font-size: 1.2rem;
 }
 
-/* Video Modal Styles */
+
 .video-modal-overlay {
     position: fixed;
     top: 0;
@@ -74,7 +73,7 @@
     position: relative;
     width: 100%;
     padding-bottom: 56.25%;
-    /* 16:9 Aspect Ratio */
+
     height: 0;
 }
 

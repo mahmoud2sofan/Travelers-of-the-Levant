@@ -4,12 +4,12 @@
     right: 20px;
     z-index: 1000;
 }
+
 .feedback-fab {
     width: 60px;
     height: 60px;
     border-radius: 50%;
     background-color: #28a745;
-    /* Green to match theme */
     border: none;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     cursor: pointer;

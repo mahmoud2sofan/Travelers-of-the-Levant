@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 import React, { useEffect, useContext } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { UserContext } from '../../UserContext';
@@ -32,4 +30,3 @@ function ExploreCountry() {
 }
 
 export default ExploreCountry;
->>>>>>> Stashed changes

@@ -10,13 +10,13 @@ const Hero = ({ countryName }) => {
         }
     };
 
-    // Default to 'palestine' if no countryName or fallback
+
     const currentCountry = countryName || 'palestine';
 
-    // Glob import for assets
+
     const images = import.meta.glob('../../../assets/ExploreCountry/**/*.jpeg', { eager: true });
 
-    // Find matching image
+
     const imagePathKey = Object.keys(images).find(key =>
         key.includes(`images-${currentCountry.toLowerCase()}/${currentCountry.toLowerCase()}.jpeg`)
     );

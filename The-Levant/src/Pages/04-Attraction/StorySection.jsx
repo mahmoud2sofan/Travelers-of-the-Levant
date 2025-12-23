@@ -22,7 +22,7 @@ const StorySection = () => {
     const [showVideo, setShowVideo] = useState(false);
 
     const _cn = String(countryName).trim().toLowerCase();
-    let normalizedCountry = 'Palestine'; // Default
+    let normalizedCountry = 'Palestine';
 
     if (_cn.includes('palestin') || _cn.includes('فلسط')) normalizedCountry = 'Palestine';
     else if (_cn.includes('syria') || _cn.includes('سوري')) normalizedCountry = 'Syria';
@@ -36,7 +36,7 @@ const StorySection = () => {
         if (videoId) {
             setShowVideo(true);
         } else if (videoUrl) {
-            // Fallback if ID extraction fails but URL exists
+
             window.open(videoUrl, '_blank');
         }
     };

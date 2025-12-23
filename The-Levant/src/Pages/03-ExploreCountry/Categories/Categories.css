@@ -1,4 +1,3 @@
-/* Categories Grid Section */
 .categories-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -35,9 +34,7 @@
 
 .category-image {
     width: 520px;
-    /* Matched from grid column definition above */
     height: 300px;
-    /* Adjusted slightly for better aspect ratio or keep 240px */
     overflow: hidden;
     border-radius: 20px;
     display: flex;
@@ -45,13 +42,11 @@
     justify-content: center;
 }
 
-/* override width from css if needed, original was 380px in .category-image but grid was 520px */
+
 .category-image {
     width: 100%;
     height: 300px;
-    /* Fixed height */
     flex-shrink: 0;
-    /* Prevent shrinking */
 }
 
 
@@ -102,16 +97,14 @@
     text-align: right;
 }
 
-/* Default LTR align */
+
 .category-info {
     align-items: flex-start;
     text-align: left;
 }
 
 
-/* Re-using action button styles locally or importing global? 
-   Let's keep them here for the component self-containment 
-*/
+
 .action-buttons {
     display: inline-flex;
     gap: 12px;
@@ -136,19 +129,16 @@
     align-items: center;
     gap: 8px;
     text-decoration: none;
-    /* since we use Link */
 }
 
 .action-btn:hover {
     transform: translateY(-4px) scale(1.02);
     box-shadow: 0 10px 28px rgba(33, 53, 71, 0.18);
     background: #0b3d11;
-    /* Lighter green for hover */
 }
 
 .action-btn[data-purpose="Guide"] {
     background: #002D04;
-    /* Keep consistent or use distinct? User said "the View Details button", implying potentially all action buttons or just that one. I will safe-default to both matching Nav unless specified. */
 }
 
 /* Responsive */
@@ -160,7 +150,6 @@
 
     .category-row.reverse {
         direction: ltr;
-        /* Reset direction for mobile stacking */
     }
 
     .category-info,

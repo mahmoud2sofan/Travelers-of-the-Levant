@@ -86,7 +86,7 @@ function Attraction() {
           margin: 0;
         }
         
-        /* Header Search Styles */
+
         .header-search-container {
           margin-top: 20px;
           width: 100%;

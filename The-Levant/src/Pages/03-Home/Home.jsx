@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Home.css';
-import Nav from '../01-Common/Nav/Nav.jsx';
-import Footer from '../01-Common/Footer/Footer.jsx';
+import Nav from '../../Components/Nav/Nav.jsx';
+import Footer from '../../Components/Footer/Footer.jsx';
 import Cards from '../../Components/Cards/cards.jsx';
 import Htitle from '../../Components/HomeTitle/Htitle.jsx';
 

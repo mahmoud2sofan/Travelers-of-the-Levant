@@ -1,0 +1,119 @@
+.features-container {
+    padding: 80px 20px;
+    border-bottom: 1px solid #eee;
+    background: #FFFFFF;
+}
+
+.features-row {
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.features-content {
+    flex: 2;
+}
+
+.features-content h2 {
+    font-size: 40px;
+    color: #111111;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.features-content h2::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    background: #002D04;
+    bottom: -10px;
+    left: 0;
+}
+
+.features-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.features-content li {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+    color: #333;
+}
+
+.features-content li::before {
+    content: "•";
+    color: #002D04;
+    font-weight: bold;
+    display: inline-block;
+    width: 16px;
+    margin-left: -16px;
+}
+
+.features-content b {
+    color: #002D04;
+}
+
+.features-content li:hover {
+    color: #002D04;
+    cursor: default;
+}
+
+.features-content li::after {
+    background: #002D04;
+}
+
+.features-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.features-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.features-image img:hover {
+    transform: scale(1.02);
+}
+
+@media screen and (max-width: 900px) {
+    .features-row {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .features-content h2::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .features-content ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        text-align: left;
+    }
+
+    .features-content li {
+        width: calc(50% - 10px);
+    }
+
+    .features-image {
+        order: -1;
+    }
+}

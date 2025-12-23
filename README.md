@@ -1,2 +1,4 @@
-# Travelers-of-the-Levant
-The Levant Traveler Project is an interactive website that aims to provide an integrated tourism experience in the Levant, through exploring the countries, displaying historical, religious and natural landmarks, and providing the possibility of requesting a tour guide to facilitate the organization of trips.
+![Comp 1_00000](https://github.com/user-attachments/assets/3a7d998e-f75e-4ac0-9357-d401d4909d49)
+            Our mission is to provide an integrated tourism experience for the Levant region.
+        We aim to preserve and showcase the rich heritage of Jordan, Palestine, Lebanon, and Syria
+    by making their historical and natural wonders accessible to the world through a modern digital lens.

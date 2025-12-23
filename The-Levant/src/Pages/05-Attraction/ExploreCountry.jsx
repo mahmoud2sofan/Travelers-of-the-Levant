@@ -9,14 +9,11 @@ function ExploreCountry() {
   const countryName = ctx.countryName ?? 'Palestine';
   const purpose = ctx.purpose ?? 'Nature';
   const navigate = useNavigate();
-  // normalize image filename for known country names
   const _cn = String(countryName || '').trim();
   let imageFile = _cn.toLowerCase();
   if (imageFile.includes('palestin') || imageFile.includes('فلسط')) imageFile = 'Palestine';
   else if (imageFile.includes('syria') || imageFile.includes('سوري')) imageFile = 'Syria';
-  // fallback: remove spaces
   imageFile = imageFile.replace(/\s+/g, '');
-  // TEMP: force to Syria.jpg for testing
   imageFile = 'Syria';
 
   const getHeaderDescription = () => {
@@ -99,5 +96,6 @@ function ExploreCountry() {
     </>
   )
 }
+
 
 export default ExploreCountry

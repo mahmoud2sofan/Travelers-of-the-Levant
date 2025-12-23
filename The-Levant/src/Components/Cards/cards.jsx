@@ -25,7 +25,7 @@ function Cards() {
               <button
                 className="explore-button"
                 onClick={() =>
-                  navigate(/explore/${country.name.toLowerCase()})
+                  navigate(`/explore/${country.name.toLowerCase()}`)
                 }
               >
                 Explore

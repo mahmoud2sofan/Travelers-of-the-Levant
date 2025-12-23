@@ -2,7 +2,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -15,7 +16,7 @@ html, body {
   width: 100vw;
   display: flex;
   flex-direction: column;
-  background-image: url('../src/assets/5.jpg'); 
+  background-image: url('/5.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -35,6 +36,7 @@ html, body {
     opacity: 0;
     transform: translateY(40px) scale(0.96);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0) scale(1);
@@ -46,7 +48,7 @@ html, body {
   backdrop-filter: blur(14px);
   padding: 45px 35px;
   border-radius: 18px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
   width: 420px;
   min-height: 360px;
   display: flex;
@@ -61,7 +63,7 @@ html, body {
   color: #ffffff;
   margin-bottom: 30px;
   text-align: center;
-  text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
 }
 
 .login-form {
@@ -70,7 +72,7 @@ html, body {
 
 .login-form .MuiTextField-root {
   margin-bottom: 18px;
-  background-color: rgba(255,255,255,0.25);
+  background-color: rgba(255, 255, 255, 0.25);
   border-radius: 6px;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
@@ -94,9 +96,9 @@ html, body {
 }
 
 .login-form .MuiButton-root:hover {
-  background-color: rgba(0,140,0,0.95);
+  background-color: rgba(0, 140, 0, 0.95);
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
 
 .error-message {

@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./Hero.css";
 
 function Hero() {
@@ -10,14 +10,9 @@ function Hero() {
 
   const [sentence, setSentence] = useState(0);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setSentence((sentence) => (sentence + 1) % slogans.length);
-    }, 3000);
-
-    return () => clearInterval(interval);
-  }, []);
-
+  setTimeout(() => {
+    setSentence(sentence => (sentence + 1) % slogans.length);
+  }, 3000);
 
   return (
     <section className="hero">
@@ -27,10 +22,18 @@ function Hero() {
         <p key={sentence} className="fade-text">
           {slogans[sentence]}
         </p>
-        <button className="hero-btn" onClick={() => document.getElementById("mission")?.scrollIntoView({ behavior: "smooth" })}>Our Mission</button>
+        <button
+          className="hero-btn"
+          onClick={() =>
+            document
+              .getElementById("mission")
+              ?.scrollIntoView({ behavior: "smooth" })
+          }
+        >
+          Our Mission
+        </button>
       </div>
     </section>
-
   );
 }
 

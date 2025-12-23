@@ -1,33 +1,6 @@
-import React from 'react';
+import React from "react";
 import "./Team.css";
 import TeamImg from "../../../assets/Team.png";
-
-const teamMembers = [
-    {
-        name: "Mahmoud Sofan",
-        role: "Developer",
-        description: "Designed 'About Us' & 'Hire a Guide' pages.",
-        github: "https://github.com/mahmoud2sofan"
-    },
-    {
-        name: "Alaa Sofan",
-        role: "Developer",
-        description: "Designed 'Attraction' page.",
-        github: "https://github.com/alaa-500"
-    },
-    {
-        name: "Mojahed Alkayyal",
-        role: "Developer",
-        description: "Designed 'Login/SignUp' & 'Home' pages.",
-        github: "https://github.com/mojahedkayyal"
-    },
-    {
-        name: "Mohammed Dawood",
-        role: "Developer",
-        description: "Designed 'ExploreCountry' page.",
-        github: "https://github.com/Mohammad14567"
-    }
-];
 
 function Team() {
     return (
@@ -36,13 +9,26 @@ function Team() {
                 <div className="team-content">
                     <h2>Meet the Developers</h2>
                     <ul>
-                        {teamMembers.map((member, index) => (
-                            <li key={index}>
-                                <a href={member.github} target="_blank" rel="noopener noreferrer" className="team-link">
-                                    <b>{member.name}:</b> {member.role} - {member.description}
-                                </a>
-                            </li>
-                        ))}
+                        <li>
+                            <a href="https://github.com/mahmoud2sofan" target="_blank" rel="noopener noreferrer" className="team-link">
+                                <b>Mahmoud Sofan</b> - Developer: Designed 'About Us' & 'Hire a Guide' pages.
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/alaa-500" target="_blank" rel="noopener noreferrer" className="team-link">
+                                <b>Alaa Sofan</b> - Developer: Designed 'Attraction' page.
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/mojahedkayyal" target="_blank" rel="noopener noreferrer" className="team-link">
+                                <b>Mojahed Alkayyal</b> - Developer: Designed 'Login/SignUp' & 'Home' pages.
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/Mohammad14567" target="_blank" rel="noopener noreferrer" className="team-link">
+                                <b>Mohammed Dawood</b> - Developer: Designed 'ExploreCountry' page.
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <div className="team-image">

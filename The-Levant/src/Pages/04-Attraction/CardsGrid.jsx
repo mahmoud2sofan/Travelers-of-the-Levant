@@ -11,19 +11,19 @@ const CardsGrid = ({ searchQuery = '' }) => {
     let url = null;
 
     if (countryName === 'Palestine') {
-      url = 'https://mocki.io/v1/36738a55-8abf-4014-aa44-468adfc33797'; // جاهز
+      url = 'https://mocki.io/v1/36738a55-8abf-4014-aa44-468adfc33797';
       if (purpose === 'Nature') {
-        url = 'https://mocki.io/v1/2712ff1a-33d2-44a1-ab77-fd4589b9cc0c'; // جاهز
+        url = 'https://mocki.io/v1/2712ff1a-33d2-44a1-ab77-fd4589b9cc0c';
       } else if (purpose === 'Religious') {
-        url = 'https://mocki.io/v1/205dcd08-2286-4d01-a618-2e2251da4449'; // jahiz
+        url = 'https://mocki.io/v1/205dcd08-2286-4d01-a618-2e2251da4449';
       }
     } else if (countryName === 'Syria') {
       if (purpose === 'Historical') {
-        url = 'https://mocki.io/v1/536bcb19-d4cb-4062-a962-d8730ab84dea'; // jaheeeez
+        url = 'https://mocki.io/v1/536bcb19-d4cb-4062-a962-d8730ab84dea';
       } else if (purpose === 'Religious') {
-        url = 'https://mocki.io/v1/6bc1816c-f53d-40d1-aa0a-7a75705ee4f7'; // jaheeez
+        url = 'https://mocki.io/v1/6bc1816c-f53d-40d1-aa0a-7a75705ee4f7';
       } else if (purpose === 'Nature') {
-        url = 'https://mocki.io/v1/4540a750-594c-4c8e-bd5e-38f7af7a1778'; //doneee
+        url = 'https://mocki.io/v1/4540a750-594c-4c8e-bd5e-38f7af7a1778'; 
       }
     } else if (countryName === 'Jordan') {
       if (purpose === 'Nature') {
@@ -31,7 +31,7 @@ const CardsGrid = ({ searchQuery = '' }) => {
       } else if (purpose == 'Historical') {
         url = 'https://mocki.io/v1/b05ac1a5-fc66-47d1-bf90-3fdf287485fa';
       } else if (purpose == 'Religious'){
-        url = 'https://mocki.io/v1/68d15056-379d-45ac-aac5-5ae3146c97eb;
+        url = 'https://mocki.io/v1/68d15056-379d-45ac-aac5-5ae3146c97eb';
       }
     } else if (countryName === 'Lebanon') {
       if (purpose === 'Nature') {

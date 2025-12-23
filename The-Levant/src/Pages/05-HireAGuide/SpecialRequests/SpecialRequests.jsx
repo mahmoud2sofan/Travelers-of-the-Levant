@@ -4,7 +4,7 @@ import './SpecialRequests.css';
 const SpecialRequests = ({ register, errors }) => {
     return (
         <div className="section">
-            <h3 className="heading">5. Special Requests</h3>
+            <h3 className="heading">4. Special Requests</h3>
 
             <div className="field">
                 <label htmlFor="specialRequests">Any special requests or notes?</label>

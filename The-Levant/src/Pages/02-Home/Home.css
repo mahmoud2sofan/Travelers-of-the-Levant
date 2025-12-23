@@ -3,7 +3,5 @@
     flex-direction: column;
     min-height: 100vh;
     padding-top: 80px;
-    /* Account for fixed Nav (60px) + spacing */
     background-color: #f9f9f9;
-    /* Light background for better contrast */
 }

@@ -11,7 +11,7 @@ const CardsGrid = ({ searchQuery = '' }) => {
     let url = null;
 
     if (countryName === 'Palestine') {
-      url = 'https://mocki.io/v1/cfbeebc9-decf-4e79-8bb6-e4ff99ad980c';
+      url = 'https://mocki.io/v1/36738a55-8abf-4014-aa44-468adfc33797';
       if (purpose === 'Nature') {
         url = 'https://mocki.io/v1/8e612bdd-4007-4e96-97a1-812a87f3ae3c';
       } else if (purpose === 'Religious') {

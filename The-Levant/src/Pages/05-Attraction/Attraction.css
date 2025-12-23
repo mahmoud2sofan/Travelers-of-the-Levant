@@ -53,8 +53,6 @@ body {
     font-weight: 300;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
-
-/* Navbar Styles */
 .navbar {
     position: fixed;
     top: 0;
@@ -110,8 +108,6 @@ body {
 .nav-links a:hover::after {
     width: 100%;
 }
-
-/* Big Card Section */
 .featured-section {
     padding: 4rem 2rem;
     display: flex;
@@ -158,4 +154,5 @@ body {
     font-size: 1.2rem;
     color: #666;
     line-height: 1.6;
+
 }

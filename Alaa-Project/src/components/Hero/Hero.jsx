@@ -1,6 +1,6 @@
 import React from 'react';
 import './Hero.css';
-import bgImage from '../../assets/img.jpeg';
+import bgImage from '../../assets/images-palestine/palestine.jpeg';
 
 const Hero = () => {
     const handleScroll = () => {

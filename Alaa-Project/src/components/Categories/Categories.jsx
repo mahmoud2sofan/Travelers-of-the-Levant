@@ -29,7 +29,7 @@ const Categories = () => {
         {
             id: 'guide',
             name: 'Tour Guide',
-            image: '/img.jpeg',
+            image: 'src/assets/img.jpeg',
             description: "Get comprehensive information about the best hotels, restaurants, tourist attractions, and available services to ensure an enjoyable and safe travel experience.",
             link: '/guide.html'
         }

@@ -31,8 +31,7 @@ const CardsGrid = ({ searchQuery = '' }) => {
       } else if (purpose == 'Historical') {
         url = 'https://mocki.io/v1/d836a547-19cf-41e8-90f1-098cc644f72e';
       }
-    }
-    else if (countryName === 'Lebanon') {
+    } else if (countryName === 'Lebanon') {
       if (purpose === 'Nature') {
         url = 'https://mocki.io/v1/b98bb451-3a08-41b8-bb81-c73369d06455';
       } else if (purpose === 'Religious') {

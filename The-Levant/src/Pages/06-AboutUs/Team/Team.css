@@ -1,0 +1,135 @@
+.team-container {
+    padding: 80px 20px;
+    border-bottom: 1px solid #eee;
+    background: #FFFFFF;
+}
+
+.team-row {
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.team-content {
+    flex: 2;
+}
+
+.team-content h2 {
+    font-size: 40px;
+    color: #111111;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.team-content h2::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    background: #002D04;
+    bottom: -10px;
+    left: 0;
+}
+
+.team-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.team-content li {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+    color: #333;
+}
+
+.team-content li::before {
+    content: "•";
+    color: #002D04;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 2px;
+    /* Adjusted to align with text */
+    font-size: 20px;
+    /* Make it slightly larger */
+}
+
+.team-link {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    width: 100%;
+    transition: color 0.3s ease;
+}
+
+.team-link:hover {
+    color: #002D04;
+}
+
+
+.team-content b {
+    color: #002D04;
+}
+
+.team-content li:hover {
+    color: #002D04;
+    cursor: pointer;
+}
+
+.team-content li::after {
+    background: #002D04;
+}
+
+.team-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.team-image img {
+    width: 100%;
+    /* max-width removed for natural size */
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.team-image img:hover {
+    transform: scale(1.02);
+}
+
+@media screen and (max-width: 900px) {
+    .team-row {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .team-content h2::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .team-content ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        text-align: left;
+    }
+
+    .team-content li {
+        width: calc(50% - 10px);
+    }
+
+    .team-image {
+        order: -1;
+    }
+}

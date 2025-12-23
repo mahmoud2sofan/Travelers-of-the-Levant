@@ -14,7 +14,7 @@ function FeedbackFab() {
             return;
         }
 
-        console.log(`Sending feedback to random${Math.floor(Math.random() * 1000)}@email.com`);
+        console.log(`Sending feedback to TheLevantTravellers@gmail.com`);
         console.log({ title, body });
 
         alert(`Feedback sent successfully!\nTitle: ${title}\nMessage sent to TheLevantTravellers@gmail.com`);

@@ -31,12 +31,10 @@ body {
     right: 0;
     bottom: 0;
     background: rgba(0, 0, 0, 0.4);
-    /* Dark overlay */
 }
 
 .hero-content {
     position: relative;
-    /* To sit on top of overlay */
     z-index: 1;
     padding: 20px;
 }
@@ -64,7 +62,6 @@ body {
     /* Align lenks to left */
     align-items: center;
     gap: 4rem;
-    /* Space between logo and links */
     z-index: 10;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), transparent);
 
@@ -156,3 +153,4 @@ body {
     line-height: 1.6;
 
 }
+
